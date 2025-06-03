@@ -1,0 +1,227 @@
+/* Global wrapper with dark background */
+.hero-wrapper {
+    background-color: #FFB4A2;
+    color: white;
+    position: relative;
+    z-index: 1;
+    padding: 2rem 2rem;
+    padding-bottom: 0;
+    overflow: hidden;
+  }
+  
+  /* Hero container - Flex for layout */
+  .hero-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    animation: fadeIn 1.2s ease-in-out;
+  }
+  
+  /* Left side - Text Section */
+  .hero-left {
+    max-width: 45%;
+    gap: 2rem;
+  }
+  .hero-title h1 {
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 3rem;
+    margin-bottom: 0.5rem;
+    animation: slideInLeft 1.5s ease-in-out;
+  }
+  .orange-circle {
+    height: 4rem;
+    width: 4rem;
+    background: #ffa500;
+    border-radius: 50%;
+    position: absolute;
+    right: 70%;
+    top: 10%;
+    animation: bounce 1.5s infinite alternate;
+  }
+  
+  
+  
+  /* Stats Section */
+  .stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+  }
+  .stat span:first-child {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffd700;
+  }
+  .stat span:last-child {
+    font-size: 1rem;
+    color: #e0e0e0;
+  }
+  
+  /* Right side - Image Section */
+  .hero-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .image-container {
+    width: 20rem;
+    height: 23rem;
+    border-radius: 50% 50% 0 0; /* Arch effect */
+    overflow: hidden;
+    border: 8px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    animation: zoomIn 1.5s ease-in-out;
+  }
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s ease-in-out;
+  }
+  .image-container img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Keyframes for Animations */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes slideInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  @keyframes slideInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes zoomIn {
+    0% {
+      transform: scale(0.9);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  /* Mobile responsive */
+  @media (max-width: 768px) {
+    .hero-container {
+      flex-direction: column;
+      text-align: center;
+    }
+    .hero-left {
+      max-width: 100%;
+    }
+    .image-container {
+      width: 100%;
+      height: 25rem;
+    }
+    .stats {
+      justify-content: center;
+      gap: 1rem;
+    }
+    .stat span:first-child {
+      font-size: 1.5rem;
+    }
+    .stat span:last-child {
+      font-size: 0.8rem;
+    }
+  }
+
+
+  /* Add animation for scroll into view */
+.animate-circle {
+    animation: bounce 1.5s infinite alternate;
+  }
+  
+  .animate-text {
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .animate-search {
+    animation: slideInUp 1.2s ease-in-out;
+  }
+  
+  /* Keyframes for Animations */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .hero-container {
+      flex-direction: column;
+      text-align: center;
+    }
+    .hero-left {
+      max-width: 100%;
+    }
+    .image-container {
+      width: 100%;
+      height: 25rem;
+    }
+    .stats {
+      justify-content: center;
+      gap: 1rem;
+    }
+  }
+  
+  

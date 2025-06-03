@@ -1,0 +1,100 @@
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    padding: 40px 40px; /* Increased padding for better spacing */
+    background-color: rgb(250, 223, 213);
+    transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+.contact:hover {
+    background-color: rgb(245, 215, 203); /* Slightly darker on hover */
+}
+
+.contact h1 {
+    font-size: 36px; /* Larger heading */
+    color: #333; /* Darker text */
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+
+.contact-pic img {
+    width: 25rem; /* Larger image */
+    height: 20rem; /* Larger image */
+    border-radius: 12px;
+    box-shadow: 8px 8px 20px rgba(255, 68, 0, 0.3); /* Softer shadow */
+    transition: transform 0.3s ease; /* Smooth image transformation */
+}
+
+.contact-pic img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.contact-form {
+    flex: 1; /* Allow form to take available space */
+}
+
+.form {
+    background-color: rgba(250, 223, 213, 0.7); /* Slightly more opaque background */
+    border: 1px solid #ccc;
+    padding: 30px; /* Increased padding */
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+.form:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    background-color: rgba(250, 223, 213, 0.9);
+}
+
+.form-1 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px; /* Increased margin */
+}
+
+.form-2 {
+    display: grid;
+    gap: 15px; /* Increased gap */
+}
+
+input[type="text"],
+input[type="number"] {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 12px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-color: #ff6600; /* Highlight on focus */
+    outline: none;
+}
+
+input[type="text"][placeholder="Type a message"] {
+    height: 100px; /* Larger message input */
+    resize: vertical;
+}
+
+.contact-btn {
+    background-color: #ff6600; /* Orange button */
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: #e65c00; /* Darker orange on hover */
+    transform: scale(1.05);
+}

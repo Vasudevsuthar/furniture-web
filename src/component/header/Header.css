@@ -1,0 +1,90 @@
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 1200px;
+    background-color: transparent;
+    color: white;
+    padding: 10px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    transition: background-color 0.3s ease-in-out, padding 0.3s ease-in-out;
+  }
+  
+  /* Sticky Navbar Style */
+  .navbar.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1000;
+    transition: background-color 0.3s ease-in-out, padding 0.3s ease-in-out;
+  }
+  
+  /* Logo Style */
+  .logo {
+    display: flex;
+    justify-content: center;
+    margin-left: 40px;
+  }
+  
+  .logo h1 {
+    color: white;
+    font-size: 30px;
+  }
+  
+  .navbar img {
+    width: 40px;
+    height: 35px;
+  }
+  
+  /* Navbar Links */
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .navbar a:hover {
+    color: #dd7210;
+  }
+  
+  /* Menu Centering */
+  .menu {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px;
+  }
+  
+  .menu a{
+    cursor: pointer;
+  }
+  
+  .menu1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    gap: 10px;
+    margin-right: 40px;
+  }
+  
+  .profile,
+  .search {
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .profile:hover,
+  .search:hover {
+    color: #dd7210;
+  }
+  
