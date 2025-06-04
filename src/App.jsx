@@ -6,6 +6,7 @@ import Project from "./component/project/Project";
 import About from "./component/about/About";
 import Contact from "./component/contactUs/ContactUs";
 import Work from "./component/work/Work";
+import Services from "./component/services/Services";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -26,6 +27,7 @@ const App = () => {
           <div id="our-work">
             <Work />
           </div>
+          <Services />
           <div id="about">
             <About />
           </div>
