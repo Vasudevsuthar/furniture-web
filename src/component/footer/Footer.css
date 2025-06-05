@@ -1,0 +1,74 @@
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #1b6c73;
+
+}
+
+
+.footer-company,
+.footer-contect {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 40px;
+    color: white;
+}
+
+/* Logo Section */
+.footer-company-logo img {
+    width: 120px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Company Info */
+.footer-company-info p {
+    margin: 4px 0;
+    font-size: 0.95rem;
+    font-weight: 400;
+}
+
+/* Contact Info */
+.footer-contect-info p {
+    margin: 5px 0;
+    font-size: 0.95rem;
+}
+
+/* Social Icons */
+.social-icon {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.social-icon a {
+    color: white;
+    font-size: 1.5rem;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.social-icon a:hover {
+    transform: scale(1.2);
+    color: #ffd700;
+    /* Golden tint on hover */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+
+    .footer-company,
+    .footer-contect {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-company-logo {
+        margin-bottom: 10px;
+    }
+
+    .social-icon {
+        justify-content: center;
+    }
+}

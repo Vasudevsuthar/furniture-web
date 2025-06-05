@@ -7,6 +7,9 @@ import About from "./component/about/About";
 import Contact from "./component/contactUs/ContactUs";
 import Work from "./component/work/Work";
 import Services from "./component/services/Services";
+import WhyChooseUs from "./component/whyChooseUs/WhyChooseUs";
+import OurClient from "./component/ourClients/OurClient";
+import Footer from "./component/footer/Footer";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -28,12 +31,15 @@ const App = () => {
             <Work />
           </div>
           <Services />
-          <div id="about">
+          <WhyChooseUs />
+          <OurClient />
+          <Footer />
+          {/* <div id="about">
             <About />
           </div>
           <div id="contact">
             <Contact />
-          </div>
+          </div> */}
         </>
       )}
     </div>

@@ -1,0 +1,59 @@
+.why-choose-us {
+  padding: 30px;
+  border-top: 1px solid black;
+  padding: 80px 0;
+}
+
+.why-heading {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.why-description {
+  font-size: 1.2rem;
+  color: #666;
+  padding: 40px 30px;
+  text-align: justify;
+}
+
+.why-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.why-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  text-align: center;
+  width: 300px;
+}
+
+.why-icon-wrapper {
+  width: 100px;
+  height: 100px;
+  border: 3px solid #dd7210;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 1rem;
+}
+
+.why-icon {
+  font-size: 2.5rem;
+  margin-top: 10px;
+}
+
+.why-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
